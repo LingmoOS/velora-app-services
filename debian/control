@@ -1,7 +1,7 @@
-Source: dde-app-services
+Source: velora-app-services
 Section: libdevel
 Priority: optional
-Maintainer: Deepin Packages Builder <yeshanshan@uniontech.com>
+Maintainer: Lingmo OS Team <team@lingmo.org>
 Build-Depends:
  debhelper (>=9),
  pkg-config,
