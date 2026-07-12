@@ -1,4 +1,4 @@
-Source: velora-app-services
+Source: lingmo-app-services
 Section: libdevel
 Priority: optional
 Maintainer: Lingmo OS Team <team@lingmo.org>
@@ -17,28 +17,28 @@ Build-Depends:
  qt6-tools-dev
 Standards-Version: 4.3.0
 
-Package: dde-dconfig-daemon
+Package: lingmo-dconfig-daemon
 Architecture: any
 Conflicts: dconfig-daemon
 Replaces: dconfig-daemon
 Depends:
  ${shlibs:Depends},
  ${misc:Depends}
-Description: deepin desktop-environment - dde-dconfig-daemon module
- dde-dconfig-daemon provids dbus service for reading and writing DSG configuration.
+Description: deepin desktop-environment - lingmo-dconfig-daemon module
+ lingmo-dconfig-daemon provids dbus service for reading and writing DSG configuration.
 
-Package: dde-dconfig-editor
+Package: lingmo-dconfig-editor
 Architecture: any
 Conflicts: dconfig-editor
 Replaces: dconfig-editor
 Depends:
  ${shlibs:Depends},
  ${misc:Depends}
-Description: deepin desktop-environment - dde-dconfig-editor module
- dde-dconfig-editor is a GUI or Console tool, it's used to view and edit
+Description: deepin desktop-environment - lingmo-dconfig-editor module
+ lingmo-dconfig-editor is a GUI or Console tool, it's used to view and edit
  DSG configuration for current user.
 
-Package: dde-dconfig-doc
+Package: lingmo-dconfig-doc
 Architecture: any
 Description: Deepin Tool Kit DConfig (document)
  This package contains the doc files of DConfig

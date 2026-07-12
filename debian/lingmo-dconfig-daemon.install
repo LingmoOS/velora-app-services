@@ -1,5 +1,5 @@
 usr/bin/dde-dconfig
-usr/bin/dde-dconfig-daemon
+usr/bin/lingmo-dconfig-daemon
 usr/share/bash-completion/completions/*
 usr/share/zsh/vendor-completions/*
 usr/share/dbus-1/system.d/*
@@ -7,5 +7,5 @@ usr/share/dbus-1/interfaces/*
 usr/share/dbus-1/system-services/*
 usr/share/dde-dconfig/translations/*
 usr/share/deepin-debug-config/deepin-debug-config.d/*.json
-usr/share/deepin-log-viewer/deepin-log.conf.d/*.json
+usr/share/lingmo-log-viewer/deepin-log.conf.d/*.json
 usr/lib/systemd/system/*

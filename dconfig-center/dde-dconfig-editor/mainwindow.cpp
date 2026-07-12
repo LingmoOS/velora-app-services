@@ -398,8 +398,8 @@ void MainWindow::translateAppName()
 
     DTK_USE_NAMESPACE;
     QDBusPendingCall call = DDBusSender()
-            .service("com.deepin.dde.daemon.Launcher")
-            .interface("com.deepin.dde.daemon.Launcher")
+            .service("com.lingmo.daemon.Launcher")
+            .interface("com.lingmo.daemon.Launcher")
             .path("/com/deepin/dde/daemon/Launcher")
             .method(QString("GetAllItemInfos"))
             .call();

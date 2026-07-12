@@ -1,4 +1,4 @@
-# Debian triggers for dde-dconfig-daemon
+# Debian triggers for lingmo-dconfig-daemon
 # Monitor configuration file directories for changes
 # When triggered, the reload handler will be called automatically
 
