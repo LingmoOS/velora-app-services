@@ -1,0 +1,11 @@
+{
+    "name": "lingmo-dconfig-daemon",
+    "group": "dde",
+    "submodules": [
+        {
+            "name": "lingmo-dconfig-daemon",
+            "exec": "lingmo-dconfig-daemon.sh"
+        }
+    ],
+    "version": "V1.0"
+}

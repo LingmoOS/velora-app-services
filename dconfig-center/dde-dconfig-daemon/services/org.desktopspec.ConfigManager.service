@@ -1,5 +1,5 @@
 [D-BUS Service]
 Name=org.desktopspec.ConfigManager
-Exec=/usr/bin/dde-dconfig-daemon
+Exec=/usr/bin/lingmo-dconfig-daemon
 User=deepin-daemon
-SystemdService=dde-dconfig-daemon.service
+SystemdService=lingmo-dconfig-daemon.service

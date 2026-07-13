@@ -1,11 +1,11 @@
 {
-    "name": "dde-dconfig-daemon",
+    "name": "lingmo-dconfig-daemon",
     "group": "dde",
     "submodules": [
         {
             "name": "dsg.config",
             "filter": "dsg.config",
-            "exec": "/usr/bin/dde-dconfig-daemon",
+            "exec": "/usr/bin/lingmo-dconfig-daemon",
             "logType": "journal"
         }
     ],

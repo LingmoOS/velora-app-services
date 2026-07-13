@@ -17,10 +17,10 @@ int main(int argc, char *argv[])
 
     DApplication a(argc, argv);
     a.setApplicationVersion(VERSION);
-    a.setApplicationName("dde-dconfig-editor");
+    a.setApplicationName("lingmo-dconfig-editor");
     a.setOrganizationName("deepin");
     a.loadTranslator();
-    loadTranslation("dde-dconfig-editor");
+    loadTranslation("lingmo-dconfig-editor");
     a.setProductIcon(QIcon::fromTheme(APP_ICON));
     a.setWindowIcon(QIcon::fromTheme(APP_ICON));
     MainWindow window;

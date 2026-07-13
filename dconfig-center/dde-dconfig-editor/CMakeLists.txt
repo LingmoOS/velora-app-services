@@ -57,7 +57,7 @@ endif()
 
 set(QRC dde-dconfig-editor.qrc)
 
-ADD_EXECUTABLE(dde-dconfig-editor ${HEADERS} ${SOURCES} ${QRC} ${DCONFIG_DBUS_XML} ${QM_FILES})
+ADD_EXECUTABLE(lingmo-dconfig-editor ${HEADERS} ${SOURCES} ${QRC} ${DCONFIG_DBUS_XML} ${QM_FILES})
 
 set(COMMON_LIBS
     Qt${QT_VERSION_MAJOR}::Core
@@ -67,14 +67,14 @@ set(COMMON_LIBS
     ${DtkWidget_LIBRARIES}
 )
 
-target_link_libraries(dde-dconfig-editor PUBLIC ${COMMON_LIBS})
+target_link_libraries(lingmo-dconfig-editor PUBLIC ${COMMON_LIBS})
 
-target_include_directories(dde-dconfig-editor PUBLIC
+target_include_directories(lingmo-dconfig-editor PUBLIC
     ${CMAKE_CURRENT_BINARY_DIR}
     ${CMAKE_SOURCE_DIR}
     ${DtkWidget_INCLUDE_DIRS}
     ../common
 )
 
-install(TARGETS dde-dconfig-editor DESTINATION ${CMAKE_INSTALL_BINDIR})
-install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/dde-dconfig-editor/translations/)
+install(TARGETS lingmo-dconfig-editor DESTINATION ${CMAKE_INSTALL_BINDIR})
+install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_DATADIR}/lingmo-dconfig-editor/translations/)

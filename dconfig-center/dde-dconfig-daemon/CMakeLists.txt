@@ -11,7 +11,7 @@ set(AUTOMOC_COMPILER_PREDEFINES ON)
 
 include(src.cmake)
 
-ADD_EXECUTABLE(dde-dconfig-daemon main.cpp ${HEADERS} ${SOURCES} ${DCONFIG_DBUS_XML})
+ADD_EXECUTABLE(lingmo-dconfig-daemon main.cpp ${HEADERS} ${SOURCES} ${DCONFIG_DBUS_XML})
 
 set(COMMON_LIBS
     Qt${QT_VERSION_MAJOR}::Core
@@ -19,9 +19,9 @@ set(COMMON_LIBS
     Dtk${DTK_VERSION_MAJOR}::Core
 )
 
-target_link_libraries(dde-dconfig-daemon PUBLIC ${COMMON_LIBS})
+target_link_libraries(lingmo-dconfig-daemon PUBLIC ${COMMON_LIBS})
 
-target_include_directories(dde-dconfig-daemon PUBLIC
+target_include_directories(lingmo-dconfig-daemon PUBLIC
     ${CMAKE_CURRENT_BINARY_DIR}
     ${CMAKE_SOURCE_DIR}
 )
@@ -38,13 +38,13 @@ install (FILES services/org.desktopspec.ConfigManager.conf DESTINATION ${CMAKE_I
 
 ## services files
 install(FILES services/org.desktopspec.ConfigManager.service DESTINATION ${CMAKE_INSTALL_DATADIR}/dbus-1/system-services)
-install(FILES services/dde-dconfig-daemon.service DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/systemd/system)
+install(FILES services/lingmo-dconfig-daemon.service DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/systemd/system)
 
 ## bin
-install(TARGETS dde-dconfig-daemon DESTINATION ${CMAKE_INSTALL_BINDIR})
+install(TARGETS lingmo-dconfig-daemon DESTINATION ${CMAKE_INSTALL_BINDIR})
 
 # debug config file
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/misc/deepin-debug-config/dde-dconfig-daemon.json
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/misc/deepin-debug-config/lingmo-dconfig-daemon.json
     DESTINATION ${CMAKE_INSTALL_DATADIR}/deepin-debug-config/deepin-debug-config.d)
-install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/misc/deepin-log-config/dde-dconfig-daemon.json
-    DESTINATION ${CMAKE_INSTALL_DATADIR}/deepin-log-viewer/deepin-log.conf.d)
+install(FILES ${CMAKE_CURRENT_SOURCE_DIR}/misc/deepin-log-config/lingmo-dconfig-daemon.json
+    DESTINATION ${CMAKE_INSTALL_DATADIR}/lingmo-log-viewer/deepin-log.conf.d)

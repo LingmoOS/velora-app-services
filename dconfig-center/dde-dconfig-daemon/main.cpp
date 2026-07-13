@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 
     QCoreApplication a(argc, argv);
     a.setOrganizationName("deepin");
-    a.setApplicationName("dde-dconfig-daemon");
+    a.setApplicationName("lingmo-dconfig-daemon");
 
     QCommandLineParser parser;
     parser.addHelpOption();

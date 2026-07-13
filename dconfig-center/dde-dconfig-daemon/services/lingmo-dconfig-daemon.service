@@ -1,5 +1,5 @@
 [Unit]
-Description=dde-dconfig-daemon service
+Description=lingmo-dconfig-daemon service
 
 # Ask for the dbus socket.
 Wants=dbus.socket
@@ -9,12 +9,12 @@ After=dbus.socket
 Type=dbus
 User=deepin-daemon
 BusName=org.desktopspec.ConfigManager
-ExecStart=/usr/bin/dde-dconfig-daemon
+ExecStart=/usr/bin/lingmo-dconfig-daemon
 Environment=DSG_DATA_DIRS=/usr/share/dsg:/var/lib/linglong/entries/share/dsg
 
 ReadOnlyPaths=/usr/share/dsg -/var/lib/linglong/entries/share/dsg
 
-StateDirectory=dde-dconfig-daemon
+StateDirectory=lingmo-dconfig-daemon
 StateDirectoryMode=0700
 LogsDirectory=deepin
 
